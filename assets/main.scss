@@ -1,0 +1,60 @@
+---
+---
+
+@import "variables";
+@import "bootstrap/scss/bootstrap";
+
+body {
+  background-color: $body-bg;
+  color: $body-color;
+}
+
+.btn-primary {
+  background-color: $btn-color;
+  border-color: $btn-color;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.row-border {
+  margin-top: 3em;
+  margin-bottom: 1em;
+}
+
+.post-title {
+  color: $body-color;
+}
+
+.post-img {
+    max-width: 100%;
+    border-radius: 0.5em;
+}
+
+.post-img-wrap {
+    padding-left: 20px;
+    max-width: 300px;
+    float: right;
+    padding-bottom: 1em;
+}
+
+#top {
+  margin-top: 70px;
+}
+
+/* MailChip Signup Form Style */
+#mc_embed_signup {
+  background-color: $secondary-color;
+  clear: left;
+  font: 14px;
+  border-radius: 0.5em;
+}
+
+#mc_embed_signup form {
+    display: block;
+    position: relative;
+    text-align: left;
+    padding: 10px 0 10px 3%;
+}

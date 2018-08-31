@@ -1,0 +1,9 @@
+title: KA Green CPA
+description: Financial accounting services for businesses.
+
+sass:
+  load_paths:
+    - _sass
+    - node_modules
+
+exclude: []

@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<div id="top" class="container">
+
+  {% for post in site.posts %}
+    <div class="row row-border">
+      <div class="col-lg-8">
+        <article class="post">
+
+          <h1><a href="{{ site.baseurl }}{{ post.url }}" class="post-title">{{ post.title }}</a></h1>
+
+          <div class="entry">
+            {{ post.excerpt }}
+          </div>
+
+          <a href="{{ site.baseurl }}{{ post.url }}" class="btn btn-primary">Read More</a>
+        </article>
+      </div>
+      <div class="col-lg-4 post-img-wrap">
+        <img src="assets/img/post-images/{{ post.image }} {{ prepend: site.url }}" class="post-img">
+      </div>
+    </div>
+  {% endfor %}
+
+</div>

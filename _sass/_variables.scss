@@ -1,0 +1,19 @@
+/*
+From https://simpleit.rocks/ruby/jekyll/tutorials/how-to-add-bootstrap-4-to-jekyll-the-right-way/
+All the variables defined in Bootstrap 4 have the !default**[^scss_default] property at the end.
+When Jekyll process each Scss file, it only defines the variables that do not have been assigned any value yet,
+so we can define Bootstrap's variables before Bootstrap itself define them. It is important to do this before
+importing the variables because there are many of them depending on each other to calculate CSS properties values.
+*/
+
+$white: #fff;
+$pink: #FF3B3F;
+$gray: #212529;
+$green: #6ad6cb;
+$body-bg: $white;
+$body-color: $gray;
+$btn-color: $pink;
+$secondary-color: $green;
+
+/* custom vars */
+$custom-font-size: 20px;
